@@ -42,7 +42,8 @@ Bluetooth Interface Up:
 sudo hciconfig hci0 up
 
 
-# hostapd-wpe installation
+hostapd-wpe installation:
+
 git clone https://github.com/OpenSecurityResearch/hostapd-wpe.git
 wget http://hostap.epitest.fi/releases/hostapd-2.6.tar.gz
 tar -zxf hostapd-2.6.tar.gz
@@ -54,10 +55,12 @@ sudo cp hostapd-wpe /usr/local/bin/
 cd ../..
 cd hostapd-wpe/certs
 ./bootstrap
-# Run hostapd-wpe from anywhere:
-# sudo hostapd-wpe hostapd-wpe.conf
+Run hostapd-wpe from anywhere:
+sudo hostapd-wpe hostapd-wpe.conf
 
-# hcxdumptool installation
+
+hcxdumptool installation:
+
 git clone https://github.com/ZerBea/hcxdumptool.git
 cd hcxdumptool
 make -j $(nproc)
